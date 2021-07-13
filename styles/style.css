@@ -1,0 +1,84 @@
+/* google font style */
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+</style>
+/* common and utilities styles */
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/* common style ends */
+
+/* header part styles starts here */
+
+/* menu bar style */
+.header-area{
+  background-color: blue;
+}
+.menu-bar{
+  height: 44px;
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-content{
+  height: 24px;
+  width: 587px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  }
+.menu-content li a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 16px;
+  
+}
+.log-in{
+  width: 123px;
+  height: 44px;
+  list-style: none;
+  background-color: #E02C6D;
+  text-align: center;
+}
+.log-in a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* menu bar style ends */
+
+/* header-body style */
+.header-body{
+  display: flex;
+}
+.header-body-left{
+  display: flex;
+  flex-direction: column;
+}
+.header-title{
+  width: 485px;
+  height: 230px;
+  font-size: 64px;
+  color: aliceblue;
+  margin: 121px 102px 27px 156px;
+}
+.live-watch{
+  width: 88px;
+  height: 24px;
+  margin-left: 156px;
+  background-color: #E02C6D;
+  text-decoration: none;
+}
+.header-body-right img{
+  width: 556.01px;
+  height: 438px;
+}
+  
+
+
