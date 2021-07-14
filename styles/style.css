@@ -5,19 +5,22 @@
 /* common and utilities styles */
 body{
   font-family: 'Poppins', sans-serif;
+  margin: 0;
 }
 
 /* common style ends */
 
 /* header part styles starts here */
-
-/* menu bar style */
 .header-area{
   background-color: blue;
+  margin: o;
+  width: 100%;
 }
+/* menu bar style */
+
 .menu-bar{
   height: 44px;
-  width: 1160px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,10 +78,101 @@ body{
   background-color: #E02C6D;
   text-decoration: none;
 }
+.header-body-right{
+  margin-top: 67px;
+  margin-right: 140.99px;
+  margin-bottom: 86px;
+}
 .header-body-right img{
   width: 556.01px;
   height: 438px;
 }
+/* header style ends here */
+
+/* main part style */
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-1{
+  width: 1050px;
+}
+.players{
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+  margin-top: 70px;
+  grid-row-gap: 30px;
+  grid-column-gap: 27px;
+  justify-items: center;
+  align-items: center;
+
+
   
+}
+.player{
+  width: 330px;
+  height: 474px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 25px lightblue;
+  padding: 10px;
+}
+.player-img img{
+  width: 300px;
+  height: 256px;
+}
+.player-info{
+  width: 300px;
+  height: 154px;
+}
+.player-info h2{
+  font-size: 28px;
+}
+/* lower main style */
+.lower-main{
+  display: flex;
+  width: 1050px;
+  
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.lower-main-left{
+  width: 466px;
+  height: 309px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 25px lightblue;
+
+  padding: 10px;
+}
+.click-to-watch{
+  width: 173px;
+  height: 44px;
+  background-color: #E02C6D;
+  padding: 5px;
+}
+.click-to-watch a{
+  
+  
+  text-decoration: none;
+  font-size: 14px;
+}
+.lower-main-left h1{
+  width: 466px;
+  height: 120px;
+  font-size: 48px;
+}
+.lower-main-right{
+  margin-left: 30px;
+  box-shadow: 0 0 25px lightblue;
+}
+.lower-main-right img{
+  width: 567px;
+  height: 427px;
+}
 
 
