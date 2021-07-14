@@ -8,6 +8,7 @@ body{
   margin: 0;
 }
 
+
 /* common style ends */
 
 /* header part styles starts here */
@@ -15,6 +16,9 @@ body{
   background-color: blue;
   margin: o;
   width: 100%;
+}
+.header-area:hover .header-body-right{
+  transform: rotate(360deg) scale(1.3);
 }
 /* menu bar style */
 
@@ -42,11 +46,14 @@ body{
   
 }
 .log-in{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 123px;
   height: 44px;
   list-style: none;
   background-color: #E02C6D;
-  text-align: center;
+  color:aliceblue;
 }
 .log-in a{
   text-decoration: none;
@@ -72,16 +79,25 @@ body{
   margin: 121px 102px 27px 156px;
 }
 .live-watch{
-  width: 88px;
+  width: 123px;
   height: 24px;
   margin-left: 156px;
   background-color: #E02C6D;
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.live-watch a{
   text-decoration: none;
+  color: aliceblue;
 }
 .header-body-right{
   margin-top: 67px;
   margin-right: 140.99px;
   margin-bottom: 86px;
+  transition: transform 5s 1s ease-in-out;
 }
 .header-body-right img{
   width: 556.01px;
@@ -107,9 +123,6 @@ main{
   grid-column-gap: 27px;
   justify-items: center;
   align-items: center;
-
-
-  
 }
 .player{
   width: 330px;
@@ -154,10 +167,14 @@ main{
   height: 44px;
   background-color: #E02C6D;
   padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: aliceblue;
 }
+
 .click-to-watch a{
-  
-  
+  color: aliceblue;
   text-decoration: none;
   font-size: 14px;
 }
@@ -174,5 +191,64 @@ main{
   width: 567px;
   height: 427px;
 }
+/* footer style */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.foot-ball-logo img{
+ width: 484px;
+ height: 110px;
+}
+.social-media{
+  width: 300px;
+  font-size: 23px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* media queary styles for mobile device */
+@media only screen and (max-width:688px) {
+  .header-area{
+    display: flex;
+flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .header-body-left{
+    width: 300px;
+  }
+  .header-body-right{
+    width: 300PX;
+  }
+  .players{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .lower-main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .menu-bar{
+    display: flex;
+    flex-direction: column;
+  }
+  .foot-ball-logo{
+  width: 300px;
+  }
+  .social-media{
+    width: 300px;
+  }
+
+  
+}
